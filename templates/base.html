@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="cache-control" content="max-age=604800" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>SAFETY | SECURITY | COMFORT</title>
+
+
+<!-- jQuery -->
+
+<!-- Bootstrap4 files-->
+
+<!-- Font awesome 5 -->
+<link href="{% static 'css/comfort.css' %}" type="text/css" rel="stylesheet">
+
+<!-- custom style -->
+<link href="{% static 'css/door.css' %}" rel="stylesheet" type="text/css"/>
+<link href="{% static 'css/fan.css' %}" rel="stylesheet" type="text/css"/>
+
+<link href="{% static 'css/led1.css' %}" rel="stylesheet" type="text/css"/>
+<link href="{% static 'css/led2.css' %}" rel="stylesheet" type="text/css"/>
+<link href="{% static 'css/phone.css' %}" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" media="screen and (max-width: 1700px)" href="{% static 'css/phone.css' %}">
+<link href="{% static 'css/safety.css' %}" rel="stylesheet" type="text/css"/>
+<link href="{% static 'css/security.css' %}" rel="stylesheet" type="text/css"/>
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css"/>
+<link href="{% static 'css/notification.css' %}" rel="stylesheet" type="text/css"/>
+
+<!-- custom javascript -->
+
+<!-- Paypal Script-->
+
+
+<script type="{% static 'text/javascript' %}">
+/// some script
+
+// jquery ready start
+$(document).ready(function() {
+	// jQuery code
+
+}); 
+// jquery end
+</script>
+
+</head>
+<body>
+    <!--navbar-->
+    {% block content %}
+    <!-- content-->
+    {% endblock %}
+    <!--footer-->
+</body>
+</html>

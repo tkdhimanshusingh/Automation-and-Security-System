@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Automation Ststem</title>
+    <link rel="stylesheet" href="security.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css">
+</head>
+<body>
+    <section class="services-container">
+        <h1 class="h-primary center">
+            Security Status
+        </h1>
+        <div id="services">
+            <div class="box">
+                <img src="{% static 'images/cctv.jpg' %}" alt="cctv">
+                <h2 class="h-secondry center"><a href="http://192.168.43.146/mjpeg/1">Camera Status</a></h2>
+            </div>
+            <div class="box">
+                <img src="{% static 'images/door.png' %}" alt="door">
+                <h2 class="h-secondry center"><a href="door">Door Status</a></h2>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+{% endblock %}
